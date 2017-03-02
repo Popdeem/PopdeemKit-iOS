@@ -1,0 +1,6 @@
+framework module PopdeemKit {
+	umbrella header "PopdeemKit.h"
+	
+	export *
+	module * { export * }
+}

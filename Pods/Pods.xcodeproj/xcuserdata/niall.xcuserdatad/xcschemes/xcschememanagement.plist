@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-PopdeemKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PopdeemKitTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TabbedSample.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PopdeemKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Turbolinks.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>10FAD74D9D38996B189AAACE53C84409</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C4416D890082479503237604F0BF9A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6D3C39FD3B3FB5B159101B0509EC6E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8B5242E0B7F8D2AC7678FBE3219FCF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F794F8239828734B9041A4835A6A13A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

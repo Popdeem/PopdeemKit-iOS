@@ -8,38 +8,39 @@
 
 import Foundation
 
-class PopdeemSDK: NSObject {
-	static let shared = PopdeemSDK()
-	let apiKey: String!
-	let baseUrl: URL!
+public class PopdeemSDK: NSObject {
 	
-	init?() {
-		guard let path = Bundle.main.path(forResource: "Popdeem", ofType: "plist") else {
-			NSLog("Error: Popdeem.plist not found in bundle")
-			return nil
-		}
-		guard let myDict = NSDictionary(contentsOfFile: path) else {
-			NSLog("Error: Contents of Popdeem.plist not a Dictionary")
-			return nil
-		}
-		guard let _apiKey: String = myDict["apiKey"] as! String! else {
-			NSLog("Error: No value for key \"apiKey\" in Popdeem.plist")
-			return nil
-		}
-		guard let _urlStr: String = myDict["baseUrl"] as! String! else {
-			NSLog("Error: No value for key \"baseUrl\" in Popdeem.plist")
-			return nil
-		}
-		apiKey = _apiKey
-		baseUrl = URL(string: _urlStr)
+	private static var sharedSDK: PopdeemSDK = {
+		let sdk = PopdeemSDK()
+		return sdk
+	}()
+	
+	public var apiKey: String?
+	public var baseUrl: URL?
+	
+	
+	public class func shared() -> PopdeemSDK {
+		return sharedSDK
 	}
 	
-	static func presentHome(toNavigationController controller: UINavigationController) {
-		self.class.presentHome(toNavigationController: controller, animated: true)
+	public static func with(apiKey: String, baseUrlString: String) {
+		let sdk = sharedSDK
+		sdk.apiKey = apiKey
+		sdk.baseUrl = URL(string: baseUrlString)
 	}
 	
-	static func presentHome(toNavigationController controller: UINavigationController, animated: Bool) {
-		
+	public static func with(apiKey: String) {
+		let sdk = sharedSDK
+		sdk.apiKey = apiKey
+	}
+	
+	public static func presentHome(toNavigationController controller: UINavigationController) {
+		PopdeemSDK.presentHome(toNavigationController: controller, animated: true)
+	}
+	
+	public static func presentHome(toNavigationController controller: UINavigationController, animated: Bool) {
+		let controller = PopdeemController(forNavigationController: controller)
+		controller.push()
 	}
 
 }

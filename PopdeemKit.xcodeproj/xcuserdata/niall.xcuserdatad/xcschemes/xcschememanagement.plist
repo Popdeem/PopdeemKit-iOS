@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PopdeemKit2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>TabbedSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>391E93C31E686DBD008A4D60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>391E93E01E68795F008A4D60</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,9 +10,8 @@ import Foundation
 import UIKit
 import WebKit
 import Turbolinks
-import PopdeemKit
 
-class PopdeemController: NSObject {
+public class PopdeemController: NSObject {
 	
 	let baseUrl: URL
 	fileprivate let webViewProcessPool = WKProcessPool()
@@ -40,13 +39,13 @@ class PopdeemController: NSObject {
 		return UIApplication.shared
 	}
 	
-	init(forNavigationController navController: UINavigationController) {
-		baseUrl = (PopdeemKit.shared?.baseUrl)!
-		apiKey = (PopdeemKit.shared?.apiKey)!
+	public init(forNavigationController navController: UINavigationController) {
+		baseUrl = PopdeemSDK.shared().baseUrl!
+		apiKey = PopdeemSDK.shared().apiKey!
 		navigationController = navController
 	}
 	
-	func push() {
+	public func push() {
 		presentVisitableForSession(session, url: baseUrl)
 	}
 	
@@ -77,12 +76,12 @@ class PopdeemController: NSObject {
 }
 
 extension PopdeemController: SessionDelegate {
-	func session(_ session: Session, didProposeVisitToURL URL: Foundation.URL, withAction action: Action) {
+	public func session(_ session: Session, didProposeVisitToURL URL: Foundation.URL, withAction action: Action) {
 		//Add custom paths here - or native takeovers
 		presentVisitableForSession(session, url: URL, action: action)
 	}
 	
-	func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, withError error: NSError) {
+	public func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, withError error: NSError) {
 		NSLog("ERROR: %@", error)
 		guard let demoViewController = visitable as? DemoViewController, let errorCode = ErrorCode(rawValue: error.code) else { return }
 		
@@ -102,17 +101,17 @@ extension PopdeemController: SessionDelegate {
 		}
 	}
 	
-	func sessionDidStartRequest(_ session: Session) {
+	public func sessionDidStartRequest(_ session: Session) {
 		application.isNetworkActivityIndicatorVisible = true
 	}
 	
-	func sessionDidFinishRequest(_ session: Session) {
+	public func sessionDidFinishRequest(_ session: Session) {
 		application.isNetworkActivityIndicatorVisible = false
 	}
 }
 
 extension PopdeemController: WKScriptMessageHandler {
-	func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+	public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
 		if let message = message.body as? String {
 			let alertController = UIAlertController(title: "Turbolinks", message: message, preferredStyle: .alert)
 			alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

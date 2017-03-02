@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PopdeemKit
+
 
 class FirstViewController: UIViewController {
 
@@ -18,6 +20,10 @@ class FirstViewController: UIViewController {
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
+	}
+	
+	@IBAction func showPopdeem() {
+		PopdeemSDK.presentHome(toNavigationController: self.navigationController!)
 	}
 
 

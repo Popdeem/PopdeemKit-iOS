@@ -4,7 +4,7 @@
 target 'PopdeemKit' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+	pod 'Turbolinks', :git => 'https://github.com/turbolinks/turbolinks-ios.git', :branch => 'swift-3.0'
   target 'PopdeemKitTests' do
     inherit! :search_paths
     # Pods for testing
