@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		391E939E1E6868A0008A4D60 /* PopdeemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391E93941E6868A0008A4D60 /* PopdeemKit.framework */; };
+		391E93A31E6868A0008A4D60 /* PopdeemKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93A21E6868A0008A4D60 /* PopdeemKitTests.swift */; };
+		391E93A51E6868A0008A4D60 /* PopdeemKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 391E93971E6868A0008A4D60 /* PopdeemKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		391E93AF1E68691E008A4D60 /* PopdeemSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93AE1E68691E008A4D60 /* PopdeemSDK.swift */; };
+		391E93B11E686B5C008A4D60 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93B01E686B5C008A4D60 /* Core.swift */; };
+		391E93B31E686B6C008A4D60 /* PopdeemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93B21E686B6C008A4D60 /* PopdeemController.swift */; };
+		391E93BB1E686B74008A4D60 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93B51E686B74008A4D60 /* Error.swift */; };
+		391E93BC1E686B74008A4D60 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93B71E686B74008A4D60 /* DemoViewController.swift */; };
+		391E93BD1E686B74008A4D60 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93B91E686B74008A4D60 /* ErrorView.swift */; };
+		391E93BE1E686B74008A4D60 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391E93BA1E686B74008A4D60 /* ErrorView.xib */; };
+		391E93C71E686DBD008A4D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93C61E686DBD008A4D60 /* AppDelegate.swift */; };
+		391E93C91E686DBD008A4D60 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93C81E686DBD008A4D60 /* FirstViewController.swift */; };
+		391E93CB1E686DBD008A4D60 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E93CA1E686DBD008A4D60 /* SecondViewController.swift */; };
+		391E93CE1E686DBD008A4D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391E93CC1E686DBD008A4D60 /* Main.storyboard */; };
+		391E93D01E686DBD008A4D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391E93CF1E686DBD008A4D60 /* Assets.xcassets */; };
+		391E93D31E686DBD008A4D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391E93D11E686DBD008A4D60 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		391E939F1E6868A0008A4D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 391E938B1E6868A0008A4D60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 391E93931E6868A0008A4D60;
+			remoteInfo = PopdeemKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		391E93941E6868A0008A4D60 /* PopdeemKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopdeemKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391E93971E6868A0008A4D60 /* PopdeemKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopdeemKit.h; sourceTree = "<group>"; };
+		391E93981E6868A0008A4D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391E939D1E6868A0008A4D60 /* PopdeemKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopdeemKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		391E93A21E6868A0008A4D60 /* PopdeemKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopdeemKitTests.swift; sourceTree = "<group>"; };
+		391E93A41E6868A0008A4D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391E93AE1E68691E008A4D60 /* PopdeemSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopdeemSDK.swift; sourceTree = "<group>"; };
+		391E93B01E686B5C008A4D60 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		391E93B21E686B6C008A4D60 /* PopdeemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopdeemController.swift; sourceTree = "<group>"; };
+		391E93B51E686B74008A4D60 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		391E93B71E686B74008A4D60 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		391E93B91E686B74008A4D60 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		391E93BA1E686B74008A4D60 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		391E93BF1E686D78008A4D60 /* PopdeemKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PopdeemKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		391E93C41E686DBD008A4D60 /* TabbedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		391E93C61E686DBD008A4D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		391E93C81E686DBD008A4D60 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		391E93CA1E686DBD008A4D60 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		391E93CD1E686DBD008A4D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		391E93CF1E686DBD008A4D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		391E93D21E686DBD008A4D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		391E93D41E686DBD008A4D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391E93D81E686DE4008A4D60 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		391E93901E6868A0008A4D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391E939A1E6868A0008A4D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E939E1E6868A0008A4D60 /* PopdeemKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391E93C11E686DBD008A4D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		391E938A1E6868A0008A4D60 = {
+			isa = PBXGroup;
+			children = (
+				391E93BF1E686D78008A4D60 /* PopdeemKit.podspec */,
+				391E93D81E686DE4008A4D60 /* Podfile */,
+				391E93961E6868A0008A4D60 /* PopdeemKit */,
+				391E93A11E6868A0008A4D60 /* PopdeemKitTests */,
+				391E93C51E686DBD008A4D60 /* TabbedSample */,
+				391E93951E6868A0008A4D60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		391E93951E6868A0008A4D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				391E93941E6868A0008A4D60 /* PopdeemKit.framework */,
+				391E939D1E6868A0008A4D60 /* PopdeemKitTests.xctest */,
+				391E93C41E686DBD008A4D60 /* TabbedSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		391E93961E6868A0008A4D60 /* PopdeemKit */ = {
+			isa = PBXGroup;
+			children = (
+				391E93B01E686B5C008A4D60 /* Core.swift */,
+				391E93B21E686B6C008A4D60 /* PopdeemController.swift */,
+				391E93971E6868A0008A4D60 /* PopdeemKit.h */,
+				391E93981E6868A0008A4D60 /* Info.plist */,
+				391E93AE1E68691E008A4D60 /* PopdeemSDK.swift */,
+				391E93B41E686B74008A4D60 /* Utils */,
+				391E93B61E686B74008A4D60 /* ViewControllers */,
+				391E93B81E686B74008A4D60 /* Views */,
+			);
+			path = PopdeemKit;
+			sourceTree = "<group>";
+		};
+		391E93A11E6868A0008A4D60 /* PopdeemKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				391E93A21E6868A0008A4D60 /* PopdeemKitTests.swift */,
+				391E93A41E6868A0008A4D60 /* Info.plist */,
+			);
+			path = PopdeemKitTests;
+			sourceTree = "<group>";
+		};
+		391E93B41E686B74008A4D60 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				391E93B51E686B74008A4D60 /* Error.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		391E93B61E686B74008A4D60 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				391E93B71E686B74008A4D60 /* DemoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		391E93B81E686B74008A4D60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				391E93B91E686B74008A4D60 /* ErrorView.swift */,
+				391E93BA1E686B74008A4D60 /* ErrorView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		391E93C51E686DBD008A4D60 /* TabbedSample */ = {
+			isa = PBXGroup;
+			children = (
+				391E93C61E686DBD008A4D60 /* AppDelegate.swift */,
+				391E93C81E686DBD008A4D60 /* FirstViewController.swift */,
+				391E93CA1E686DBD008A4D60 /* SecondViewController.swift */,
+				391E93CC1E686DBD008A4D60 /* Main.storyboard */,
+				391E93CF1E686DBD008A4D60 /* Assets.xcassets */,
+				391E93D11E686DBD008A4D60 /* LaunchScreen.storyboard */,
+				391E93D41E686DBD008A4D60 /* Info.plist */,
+			);
+			path = TabbedSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		391E93911E6868A0008A4D60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E93A51E6868A0008A4D60 /* PopdeemKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		391E93931E6868A0008A4D60 /* PopdeemKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391E93A81E6868A0008A4D60 /* Build configuration list for PBXNativeTarget "PopdeemKit" */;
+			buildPhases = (
+				391E938F1E6868A0008A4D60 /* Sources */,
+				391E93901E6868A0008A4D60 /* Frameworks */,
+				391E93911E6868A0008A4D60 /* Headers */,
+				391E93921E6868A0008A4D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopdeemKit;
+			productName = PopdeemKit;
+			productReference = 391E93941E6868A0008A4D60 /* PopdeemKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		391E939C1E6868A0008A4D60 /* PopdeemKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391E93AB1E6868A0008A4D60 /* Build configuration list for PBXNativeTarget "PopdeemKitTests" */;
+			buildPhases = (
+				391E93991E6868A0008A4D60 /* Sources */,
+				391E939A1E6868A0008A4D60 /* Frameworks */,
+				391E939B1E6868A0008A4D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				391E93A01E6868A0008A4D60 /* PBXTargetDependency */,
+			);
+			name = PopdeemKitTests;
+			productName = PopdeemKitTests;
+			productReference = 391E939D1E6868A0008A4D60 /* PopdeemKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		391E93C31E686DBD008A4D60 /* TabbedSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391E93D51E686DBD008A4D60 /* Build configuration list for PBXNativeTarget "TabbedSample" */;
+			buildPhases = (
+				391E93C01E686DBD008A4D60 /* Sources */,
+				391E93C11E686DBD008A4D60 /* Frameworks */,
+				391E93C21E686DBD008A4D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabbedSample;
+			productName = TabbedSample;
+			productReference = 391E93C41E686DBD008A4D60 /* TabbedSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		391E938B1E6868A0008A4D60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = popdeem;
+				TargetAttributes = {
+					391E93931E6868A0008A4D60 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					391E939C1E6868A0008A4D60 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					391E93C31E686DBD008A4D60 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 391E938E1E6868A0008A4D60 /* Build configuration list for PBXProject "PopdeemKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 391E938A1E6868A0008A4D60;
+			productRefGroup = 391E93951E6868A0008A4D60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				391E93931E6868A0008A4D60 /* PopdeemKit */,
+				391E939C1E6868A0008A4D60 /* PopdeemKitTests */,
+				391E93C31E686DBD008A4D60 /* TabbedSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		391E93921E6868A0008A4D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E93BE1E686B74008A4D60 /* ErrorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391E939B1E6868A0008A4D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391E93C21E686DBD008A4D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E93D31E686DBD008A4D60 /* LaunchScreen.storyboard in Resources */,
+				391E93D01E686DBD008A4D60 /* Assets.xcassets in Resources */,
+				391E93CE1E686DBD008A4D60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		391E938F1E6868A0008A4D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E93BB1E686B74008A4D60 /* Error.swift in Sources */,
+				391E93BD1E686B74008A4D60 /* ErrorView.swift in Sources */,
+				391E93B11E686B5C008A4D60 /* Core.swift in Sources */,
+				391E93B31E686B6C008A4D60 /* PopdeemController.swift in Sources */,
+				391E93AF1E68691E008A4D60 /* PopdeemSDK.swift in Sources */,
+				391E93BC1E686B74008A4D60 /* DemoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391E93991E6868A0008A4D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E93A31E6868A0008A4D60 /* PopdeemKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391E93C01E686DBD008A4D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391E93CB1E686DBD008A4D60 /* SecondViewController.swift in Sources */,
+				391E93C71E686DBD008A4D60 /* AppDelegate.swift in Sources */,
+				391E93C91E686DBD008A4D60 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		391E93A01E6868A0008A4D60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 391E93931E6868A0008A4D60 /* PopdeemKit */;
+			targetProxy = 391E939F1E6868A0008A4D60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		391E93CC1E686DBD008A4D60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391E93CD1E686DBD008A4D60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		391E93D11E686DBD008A4D60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391E93D21E686DBD008A4D60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		391E93A61E6868A0008A4D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		391E93A71E6868A0008A4D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		391E93A91E6868A0008A4D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PopdeemKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popdeem.PopdeemKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		391E93AA1E6868A0008A4D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PopdeemKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popdeem.PopdeemKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		391E93AC1E6868A0008A4D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PopdeemKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popdeem.PopdeemKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		391E93AD1E6868A0008A4D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PopdeemKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popdeem.PopdeemKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		391E93D61E686DBD008A4D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TabbedSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popdeem.TabbedSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		391E93D71E686DBD008A4D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TabbedSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popdeem.TabbedSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		391E938E1E6868A0008A4D60 /* Build configuration list for PBXProject "PopdeemKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391E93A61E6868A0008A4D60 /* Debug */,
+				391E93A71E6868A0008A4D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391E93A81E6868A0008A4D60 /* Build configuration list for PBXNativeTarget "PopdeemKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391E93A91E6868A0008A4D60 /* Debug */,
+				391E93AA1E6868A0008A4D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391E93AB1E6868A0008A4D60 /* Build configuration list for PBXNativeTarget "PopdeemKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391E93AC1E6868A0008A4D60 /* Debug */,
+				391E93AD1E6868A0008A4D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391E93D51E686DBD008A4D60 /* Build configuration list for PBXNativeTarget "TabbedSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391E93D61E686DBD008A4D60 /* Debug */,
+				391E93D71E686DBD008A4D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 391E938B1E6868A0008A4D60 /* Project object */;
+}
