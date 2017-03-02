@@ -1,6 +1,0 @@
-framework module Pods_PopdeemKit {
-  umbrella header "Pods-PopdeemKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
